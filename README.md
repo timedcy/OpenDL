@@ -2,7 +2,7 @@
 
 ## 1 Core idea
 
-The Google scientist, Jeffrey Dean promotes one way to large scale dataset DeepLearning training with distributed platform, named DistBelief [1]. The key idea is model replica, each one takes the same current model parameters, but get the different data shards to train; then each model replica update the gradient to central parameter server.
+The Google scientist, Jeffrey Dean promotes one way to large scale dataset DeepLearning training with distributed platform, named [DistBelief][1]. The key idea is model replica, each one takes the same current model parameters, but get the different data shards to train; then each model replica update the gradient to central parameter server.
 
 My framework splits the train data into different data shards, each one will be trained by the model replica. After all model replica finish the current epoch train, the update gradient will be reduced to update totally; then each model replica will start the next epoch train with new parameter until convergence or get to some stop conditions. The model replica can train the data with different way based on gradient update; eg, mini-batch gradient descent, Conjugate gradient, or L-BFGS.(CG always win the best result).
 
@@ -45,20 +45,6 @@ The last is JBlas, library of Linear Algebra for Java, refer to http://mikiobrau
 ## Any suggestion are welcome. 
 
 ## References
-[1] Large Scale Distributed Deep Networks. Jeffrey Dean, Google Inc. 
+[1] Large Scale Distributed Deep Networks. Jeffrey Dean, Google Inc.
 
 [2] Building High-level Features Using Large Scale Unsupervised Learning. Quoc V. Le,Marc'Aurelio Ranzato, Stanford & Google Inc.
-
-HTML header:    <script type="text/javascript"
-    src="http://example.net/mathjax/MathJax.js">
-    </script>
-
-
-An example of math within a paragraph --- \\({e}^{i\pi }+1=0\\)
---- easy enough.
-
-And an equation on it's own:
-
-\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
-
-That's it.
