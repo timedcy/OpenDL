@@ -45,5 +45,20 @@ The last is JBlas, library of Linear Algebra for Java, refer to http://mikiobrau
 ## Any suggestion are welcome. 
 
 ## References
-[1] Large Scale Distributed Deep Networks. Jeffrey Dean, Google Inc.
+[1] Large Scale Distributed Deep Networks. Jeffrey Dean, Google Inc. 
+
 [2] Building High-level Features Using Large Scale Unsupervised Learning. Quoc V. Le,Marc'Aurelio Ranzato, Stanford & Google Inc.
+
+HTML header:    <script type="text/javascript"
+    src="http://example.net/mathjax/MathJax.js">
+    </script>
+
+
+An example of math within a paragraph --- \\({e}^{i\pi }+1=0\\)
+--- easy enough.
+
+And an equation on it's own:
+
+\\[ {x}_{1,2}=\frac{-b\pm \sqrt{{b}^{2}-4ac}}{2a} \\]
+
+That's it.
